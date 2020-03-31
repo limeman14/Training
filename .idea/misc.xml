@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/BankCSV/pom.xml" />
+        <option value="$PROJECT_DIR$/SPBMetro/pom.xml" />
+        <option value="$PROJECT_DIR$/SiteMap/pom.xml" />
+        <option value="$PROJECT_DIR$/MosMetro/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="12" project-jdk-type="JavaSDK" />
+</project>

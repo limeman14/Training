@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+    <properties>
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n
+        </Property>
+    </properties>
+
+    <appenders>
+        <File name="SearchFile" fileName="logs/app-searched.log" append="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Filters>
+                <MarkerFilter marker="INPUT_HISTORY" />
+            </Filters>
+        </File>
+
+        <File name="wrongByUsers" fileName="logs/app-wrongsearches.log" append="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Filters>
+                <MarkerFilter marker="INVALID_STATIONS" />
+            </Filters>
+        </File>
+        <File name="errors" fileName="logs/app-err.log" append="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </File>
+    </appenders>
+
+    <loggers>
+        <root level="info">
+            <appender-ref ref="SearchFile" level="info"/>
+            <appender-ref ref="wrongByUsers" level="info"/>
+            <appender-ref ref="errors" level="error"/>
+        </root>
+    </loggers>
+</configuration>
