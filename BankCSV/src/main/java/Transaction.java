@@ -2,9 +2,10 @@ import java.time.LocalDate;
 
 public class Transaction {
 
+    //blablabla
     private long amount;
     private LocalDate date;
-    private Direction direction;
+    private Direction2 direction2;
     private String category;
 
     public enum Direction {
