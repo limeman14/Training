@@ -3,9 +3,10 @@ import java.time.LocalDate;
 public class Transaction {
 
     //blablabla
+    //fuck YOU!
     private long amount;
     private LocalDate date;
-    private Direction2 direction2;
+    private Direction direction;
     private String category;
 
     public enum Direction {
@@ -26,7 +27,7 @@ public class Transaction {
         return date.toString() + ", тип операции: "
                 + direction.name()
                 + ", сумма: " + (double) amount/100
-                + " руб., категория: "
+                + " руб., категория : "
                 + category;
     }
 
